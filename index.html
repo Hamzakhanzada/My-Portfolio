@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <script src="https://kit.fontawesome.com/899352ce90.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-blacks text-white font-sans">
+
+    <div class="container mx-auto p-6 grid grid-cols-12 gap-8 items-center min-h-screen">
+        <!-- Left Side - Profile Card (4 columns) -->
+        <div class="col-span-12 lg:col-span-4 bg-blacks flex flex-col items-center text-center rounded-[30px] border border-gray p-12 space-y-4
+                    lg:fixed lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:left-5 lg:z-10">
+            <img src="./images/me.png" alt="Profile Photo" class="w-60 h-60 rounded object-cover">
+            <h1 class="text-3xl font-semibold">Muhammad Hamza</h1>
+            <h2 class="text-3xl text-white text-center font-light">Front-End-Developer</h2>
+            <h2 class="ttext-3xl text-white text-center font-light">khanzadahamza76@gmail.com</h2>
+            <p class="text-sm text-gray">Karachi Pakistan</p>
+            <p class="text-xs text-gray">&copy; 2024 Hamza. All Rights Reserved</p>
+            
+            <!-- Social Links -->
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/muhammad-hamza-537197291/" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="hover:text-green fa-brands fa-linkedin-in"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="hover:text-green fa-regular fa-envelope"></i></a>
+                <a href="#" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="hover:text-green fa-brands fa-upwork"></i></a>
+                <a href="https://github.com/Hamzakhanzada" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="fab fa-github"></i></a>
+            </div>
+
+            <button class="mt-4 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">Hire Me!</button>
+        </div>
+
+        <!-- Right Side - Main Content (8 columns) -->
+        <div class="col-span-12 lg:col-span-8 space-y-4 lg:space-y-8 lg:ml-[calc(33.33%+8.5rem)]">
+            <button class="inline-flex items-center px-4 py-2 text-sm font-medium bg-gray-700 rounded-full hover:bg-gray-600">
+                <span class="mr-2">🏠</span> INTRODUCE
+            </button>
+            <h2 class="text-5xl font-bold">Say Hi from <span class="text-green-500">Hamza</span>, Front and Developer</h2>
+            <p class="text-gray-400 text-lg">I design and code beautifully simple things and I love what I do. Just simple like that!</p>
+            
+            <!-- Circular Project Button -->
+            <div class="relative flex items-center justify-center w-24 h-24 rounded-full border-4 border-gray-500 text-center">
+                <span class="text-xs text-gray-400 rotate-90">MY PROJECTS</span>
+                <span class="absolute text-2xl bottom-3">&#x2193;</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
