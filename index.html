@@ -1,51 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/output.css" />
     <script src="https://kit.fontawesome.com/899352ce90.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="bg-blacks text-white font-sans">
-
-    <div class="container mx-auto p-6 grid grid-cols-12 gap-8 items-center min-h-screen">
+    <div class="container mx-auto px-2 grid grid-cols-12 gap-8 items-center min-h-screen">
         <!-- Left Side - Profile Card (4 columns) -->
-        <div class="col-span-12 lg:col-span-4 bg-blacks flex flex-col items-center text-center rounded-[30px] border border-gray p-12 space-y-4
-                    lg:fixed lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:left-5 lg:z-10">
-            <img src="./images/me.png" alt="Profile Photo" class="w-60 h-60 rounded object-cover">
-            <h1 class="text-3xl font-semibold">Muhammad Hamza</h1>
-            <h2 class="text-3xl text-white text-center font-light">Front-End-Developer</h2>
-            <h2 class="ttext-3xl text-white text-center font-light">khanzadahamza76@gmail.com</h2>
-            <p class="text-sm text-gray">Karachi Pakistan</p>
-            <p class="text-xs text-gray">&copy; 2024 Hamza. All Rights Reserved</p>
-            
-            <!-- Social Links -->
-            <div class="flex space-x-4">
-                <a href="https://www.linkedin.com/in/muhammad-hamza-537197291/" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="hover:text-green fa-brands fa-linkedin-in"></i></a>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="hover:text-green fa-regular fa-envelope"></i></a>
-                <a href="#" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="hover:text-green fa-brands fa-upwork"></i></a>
-                <a href="https://github.com/Hamzakhanzada" class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i class="fab fa-github"></i></a>
-            </div>
+        <div
+        class="col-span-12 lg:col-span-4 bg-blacks flex flex-col items-center text-center rounded-[30px] border border-gray p-6 space-y-4 lg:fixed lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:left-5 lg:z-10">
+        <img src="./images/me.png" alt="Profile Photo" class="w-60 h-60 rounded object-cover" />
+        <h1 class="text-3xl font-semibold">Muhammad Hamza</h1>
+        <h2 class="text-3xl text-white text-center font-light">
+            Front-End-Developer
+        </h2>
+        <h2 class="text-3xl text-white text-center font-light">
+            khanzadahamza76@gmail.com
+        </h2>
+        <p class="text-sm text-gray">Karachi Pakistan</p>
+        <p class="text-xs text-gray">&copy; 2024 Hamza. All Rights Reserved</p>
 
-            <button class="mt-4 px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">Hire Me!</button>
+        <!-- Social Links -->
+        <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/muhammad-hamza-537197291/"
+                class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i
+                    class="hover:text-green fa-brands fa-linkedin-in"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+                class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i
+                    class="hover:text-green fa-regular fa-envelope"></i></a>
+            <a href="#"
+                class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i
+                    class="hover:text-green fa-brands fa-upwork"></i></a>
+            <a href="https://github.com/Hamzakhanzada"
+                class="block w-[50px] h-[50px] leading-[46px] text-center border-2 border-gray hover:border-green rounded-full text-gray text-xl transition duration-300"><i
+                    class="fab fa-github"></i></a>
         </div>
 
+        <button
+            class="bg-green text-blacks hover:text-green w-full inline-flex items-center text-center px-[58px] py-[11px] rounded-[30px] justify-center uppercase border-2 border-green hover:bg-transparent transition duration-300 cursor-pointer">
+            Hire Me!
+        </button>
+    </div>
+
         <!-- Right Side - Main Content (8 columns) -->
-        <div class="col-span-12 lg:col-span-8  space-y-4 lg:space-y-8 lg:ml-[calc(33.33%+8.5rem)]">
-            <button class="inline-flex items-center px-4 py-2 text-sm font-medium bg-gray-700 rounded-full hover:bg-gray-600">
-                <span class="mr-2">🏠</span> INTRODUCE
-            </button>
-            <h2 class="text-5xl font-bold">Say Hi from <span class="text-green-500">Hamza</span>, Front and Developer</h2>
-            <p class="text-gray-400 text-lg">I design and code beautifully simple things and I love what I do. Just simple like that!</p>
-            
-            <!-- Circular Project Button -->
-            <div class="relative flex items-center justify-center w-24 h-24 rounded-full border-4 border-gray-500 text-center">
-                <span class="text-xs text-gray-400 rotate-90">MY PROJECTS</span>
-                <span class="absolute text-2xl bottom-3">&#x2193;</span>
+        <div class="col-span-12 space-y-4 lg:space-y-8 lg:ml-[calc(33.33%+4.5rem)] pl-3">
+            <h4 class="btn-custom">
+                <i class="mb-[1px] text-[14px] mr-[10px] fa-solid fa-house"></i>
+                introduce
+            </h4>
+            <h2 class="custom-heading">
+                Say Hi from <span class="text-green">Hamza</span>, Front and Developer
+            </h2>
+            <p class="max-w-[480px] mb-[31px] text-gray animate-fadeIn">
+                I design and code beautifully simple things and I love what I do. Just
+                simple like that!
+            </p>
+            <a class="w-[175px] animate-fadeIn h-[175px] flex items-center justify-center ml-auto border border-[#575757] rounded-full relative overflow-hidden mr-[15px]"
+                href="">
+                <img class="animate-rotate" src="./images/round-text.png" alt="" />
+                <i class="absolute text-white text-[40px] block fa-solid fa-arrow-down-long"></i>
+            </a>
+
+            <div class="flex gap-[100px] mt-[55px]">
+                <div>
+                    <h1 class="text-[72px] animate-fadeIn text-green leading-[56px] mb-[38px]">
+                        2+
+                    </h1>
+                    <span class="text-sm animate-fadeIn text-gray leading-[24px] uppercase">Years of
+                        <p>Experience</p>
+                    </span>
+                </div>
+                <div>
+                    <h1 class="text-[72px] animate-fadeIn text-green leading-[56px] mb-[38px]">
+                        50+
+                    </h1>
+                    <span class="text-sm animate-fadeIn text-gray leading-[24px] uppercase">Projects
+                        <p>Completed</p>
+                    </span>
+                </div>
+            </div>
+            <div class="pt-[90px] pb-[90px]">
+                <h4 class="btn-custom">
+                    <i class="mb-[1px] text-[14px] mr-[10px] fa-regular fa-user"></i>
+                    About
+                </h4>
+                <h1 class="custom-text">
+                    Responsive <span class="text-green">Front-End</span> Developer
+                </h1>
+                <p class="mb-[31px] mt-10 text-gray animate-fadeIn">
+                    FrontEnd Developer🌿 | From 2+ years i've been crafting responsive
+                    and user friendly web applications. I am skilled in writing HTML,
+                    CSS and JavaScript with experience on frameworks such as Bootstrap
+                    and Tailwind CSS. Experience inAble to customized WordPress custom
+                    theme which facilitates me customize website into needed respectful
+                    client. Thanks to my background in UI/UX, I combine great looks with
+                    an intuitive user experience. I worked on multiple projects that
+                    focused on functionality and performance, working great
+                    collaboratively with cross-functional teams to implement design
+                    concepts. I aim to grow further in front-end technologies and want
+                    to work on more challenging projects.
+                </p>
+            </div>
+
+            <div class="pt-[90px] pb-[90px]">
+                <h4 class="btn-custom">
+                    <i class="mb-[1px] text-[14px] mr-[10px] fa-solid fa-briefcase"></i>
+                    Resume
+                </h4>
+                <div class="">
+                    <h1 class="custom-text mb-10">
+                        Education & <span class="text-green">Experience</span>
+                    </h1>
+                    <div class="relative border-l border-gray pl-10">
+                        <div class="mb-16 group">
+                            <div
+                                class="absolute left-[-8px] w-4 h-4 animate-fadeIn bg-gray rounded-full transition-colors duration-300 group-hover:bg-green">
+                            </div>
+                            <p
+                                class="text-sm text-gray animate-fadeIn group-hover:text-green transition-colors duration-300">
+                                2020 - Present
+                            </p>
+                            <h3 class="text-lg font-semibold animate-fadeIn">
+                                Framer Designer & Developer
+                            </h3>
+                            <p class="text-sm text-gray animate-fadeIn">Brunodee Agency</p>
+                        </div>
+                        <div class="mb-16 group">
+                            <div
+                                class="absolute left-[-8px] animate-fadeIn w-4 h-4 bg-gray rounded-full transition-colors duration-300 group-hover:bg-green">
+                            </div>
+                            <p
+                                class="text-sm text-gray animate-fadeIn group-hover:text-green transition-colors duration-300">
+                                2013 - 2019
+                            </p>
+                            <h3 class="text-lg font-semibold animate-fadeIn">
+                                Webflow Developer & Co-Founder
+                            </h3>
+                            <p class="text-sm text-gray animate-fadeIn">
+                                Designflow Studio
+                            </p>
+                        </div>
+                        <div class="mb-16 group">
+                            <div
+                                class="absolute left-[-8px] top-[268px] w-4 h-4 animate-fadeIn bg-gray rounded-full transition-colors duration-300 group-hover:bg-green">
+                            </div>
+                            <p
+                                class="text-sm text-gray animate-fadeIn group-hover:text-green transition-colors duration-300">
+                                2010 - 2013
+                            </p>
+                            <h3 class="text-lg font-semibold animate-fadeIn">
+                                Bachelor Degree of Information Technology
+                            </h3>
+                            <p class="text-sm text-gray animate-fadeIn">
+                                US RMIT University
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[90px] pb-[90px]">
+                <h4 class="btn-custom">
+                    <i class="mb-[1px] text-[14px] mr-[10px] fa-solid fa-bars-staggered"></i>
+                    Services
+                </h4>
+                <h1 class="custom-text">
+                    My
+                    <span class="text-green">Specializations</span>
+                </h1>
+                <div class="pl-0 pr-5 animate-fadeIn items-start">
+                    <div
+                        class="col-span-12 hover:border-green border mt-10 border-gray rounded-[20px] transition duration-300 relative px-3 py-5 sm:p-8 md:p-[44px_48px_41px_48px] mb-4 md:mb-[10px] flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="w-full md:w-auto">
+                            <div class="">
+                                <i
+                                    class="text-green text-2xl sm:text-3xl absolute top-4 sm:top-[45px] right-4 sm:right-[50px] fa-solid fa-bezier-curve"></i>
+                                <h2 class="text-xl sm:text-2xl font-normal">
+                                    Website Design
+                                </h2>
+                            </div>
+                            <p class="text-gray text-xs sm:text-sm mt-2 mb-3">
+                                I created digital products with unique ideas using Figma &
+                                Framer
+                            </p>
+                            <a class="text-gray text-xs hover:underline mt-3 block">24 PROJECTS</a>
+                        </div>
+                        <div class="text-green-400 text-2xl sm:text-3xl mt-4 md:mt-0"></div>
+                    </div>
+
+                    <div
+                        class="col-span-12 hover:border-green border border-gray mt-10 rounded-[20px] transition duration-300 relative px-3 py-5 sm:p-8 md:p-[44px_48px_41px_48px] mb-4 md:mb-[10px] flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="w-full md:w-auto">
+                            <div class="">
+                                <i
+                                    class="text-green text-2xl sm:text-3xl absolute top-4 sm:top-[45px] right-4 sm:right-[50px] fa-solid fa-code"></i>
+                                <h2 class="text-xl sm:text-2xl font-normal">Development</h2>
+                            </div>
+                            <p class="text-gray text-xs sm:text-sm mt-2 mb-3">
+                                "I am a front-end developer, building responsive and
+                                interactive websites that go live using WordPress."
+                            </p>
+                            <a class="text-gray text-xs hover:underline mt-3 block">24 PROJECTS</a>
+                        </div>
+                        <div class="text-green-400 text-2xl sm:text-3xl mt-4 md:mt-0">
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-12 hover:border-green border border-gray mt-10 rounded-[20px] transition duration-300 relative px-3 py-5 sm:p-8 md:p-[44px_48px_41px_48px] mb-4 md:mb-[10px] flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="w-full md:w-auto">
+                            <div class="">
+                                <i
+                                    class="text-green text-2xl sm:text-3xl absolute top-4 sm:top-[45px] right-4 sm:right-[50px] fa-solid fa-bezier-curve"></i>
+                                <h2 class="text-xl sm:text-2xl font-normal">SEO/Marketing</h2>
+                            </div>
+                            <p class="text-gray text-xs sm:text-sm mt-2 mb-3">
+                                Increase the traffic for your website with SEO optimized
+                            </p>
+                            <a class="text-gray text-xs hover:underline mt-3 block">24 PROJECTS</a>
+                        </div>
+                        <div class="text-green-400 text-2xl sm:text-3xl mt-4 md:mt-0">
+                            <!-- Icon -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[90px] pb-[90px]">
+                <h4 class="btn-custom">
+                    <i class="mb-[1px] text-[14px] mr-[10px] fa-solid fa-bars-staggered"></i>
+                    my skills
+                </h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+                    <!-- Figma Card -->
+                    <div
+                        class="flex flex-col items-center border-2 border-gray hover:border-green rounded-lg  pt-12 pb-36 px-6 mb-5 transition duration-300 w-36 h-36 sm:w-40 sm:h-40 mx-auto">
+                        <img src="images/html-1.png" alt="HTML" class="h-16 w-16 mb-4">
+                        <p class="text-green-400 text-lg sm:text-xl font-bold mt-2">60%</p>
+                    </div>
+
+                    <!-- CSS Card -->
+                    <div
+                        class="flex flex-col items-center border-2 border-gray hover:border-green rounded-lg pt-12 pb-36 mb-5 transition duration-300 w-36 h-36 sm:w-40 sm:h-40 mx-auto">
+                        <img src="images/css.png" alt="CSS" class="h-16 w-16 mb-4">
+                        <p class="text-green-400 text-lg sm:text-xl font-bold mt-2">65%</p>
+                    </div>
+
+                    <!-- JavaScript Card -->
+                    <div
+                        class="flex flex-col items-center border-2 border-gray hover:border-green rounded-lg pt-12 pb-36 mb-5 transition duration-300 w-36 h-36 sm:w-40 sm:h-40 mx-auto">
+                        <img src="images/javaScript.png" alt="JavaScript" class="h-16 w-16 mb-4">
+                        <p class="text-green-400 text-lg sm:text-xl font-bold mt-2">40%</p>
+                    </div>
+
+                    <!-- Bootstrap Card -->
+                    <div
+                        class="flex flex-col items-center border-2 border-gray hover:border-green rounded-lg pt-12 pb-36 mb-5 transition duration-300 w-36 h-36 sm:w-40 sm:h-40 mx-auto">
+                        <img src="images/bootstrap.png" alt="Bootstrap" class="h-16 w-16 mb-4">
+                        <p class="text-green-400 text-lg sm:text-xl font-bold mt-2">50%</p>
+                    </div>
+
+                    <!-- Tailwind CSS Card -->
+                    <div
+                        class="flex flex-col items-center border-2 border-gray hover:border-green rounded-lg pt-12 pb-36 mb-5 transition duration-300 w-36 h-36 sm:w-40 sm:h-40 mx-auto">
+                        <img src="images/tailwindCss.png" alt="Tailwind CSS" class="h-16 w-16 mb-4">
+                        <p class="text-green-400 text-lg sm:text-xl font-bold mt-2">55%</p>
+                    </div>
+
+                    <!-- WordPress Card -->
+                    <div
+                        class="flex flex-col items-center border-2 border-gray hover:border-green rounded-lg pt-12 pb-36 mb-5 transition duration-300 w-36 h-36 sm:w-40 sm:h-40 mx-auto">
+                        <img src="images/wordpress.png" alt="WordPress" class="h-16 w-16 mb-4">
+                        <p class="text-green-400 text-lg sm:text-xl font-bold mt-2">30%</p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center border-2 border-gray hover:border-green rounded-lg pt-12 pb-36 mb-5 transition duration-300 w-36 h-36 sm:w-40 sm:h-40 mx-auto">
+                        <img src="images/php.png" alt="WordPress" class="h-16 w-16 mb-4">
+                        <p class="text-green-400 text-lg sm:text-xl font-bold mt-2">20%</p>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     </div>
-
 </body>
+
 </html>
